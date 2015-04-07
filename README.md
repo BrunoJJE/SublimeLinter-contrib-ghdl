@@ -1,7 +1,7 @@
 SublimeLinter-contrib-ghdl
 ================================
 
-[![Build Status](https://travis-ci.org/SublimeLinter/SublimeLinter-contrib-ghdl.svg?branch=master)](https://travis-ci.org/SublimeLinter/SublimeLinter-contrib-ghdl)
+[![Build Status](https://travis-ci.org/BrunoJJE/SublimeLinter-contrib-ghdl.svg?branch=master)](https://travis-ci.org/BrunoJJE/SublimeLinter-contrib-ghdl)
 
 This linter plugin for [SublimeLinter][docs] provides an interface to [ghdl](http://sourceforge.net/p/ghdl-updates/wiki/Home/). It will be used with files that have the “VHDL” syntax.
 
