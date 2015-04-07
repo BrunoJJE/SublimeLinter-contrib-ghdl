@@ -21,7 +21,7 @@ class Ghdl(Linter):
     cmd = 'ghdl -a @'
     version_re = r'GHDL (?P<version>\d+\.\d+)'
     version_requirement = '>= 0.31'
-    tempfile_suffix = '-'
+    tempfile_suffix = 'vhd'
 
     # Here is a sample ghdl error output:
     # ----8<------------
@@ -43,11 +43,6 @@ class Ghdl(Linter):
         """
 
         match, line, col, error, warning, message, near = super().split_match(match)
-
-        # Not sure the filename check is required, but we do it
-        # anyway just in case...
-        if match and match.group('path') != self.filename:
-            match = None
 
         if match:
             message = '[ghdl] ' + message
